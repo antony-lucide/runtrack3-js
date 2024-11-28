@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Création de Compte</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-blue-500 text-white p-4">
+        <nav class="container mx-auto flex justify-between">
+            <a href="index.html" class="text-lg font-semibold hover:text-blue-300">Accueil</a>
+            <a href="index.html" class="text-lg font-semibold hover:text-blue-300">Inscription</a>
+            <a href="index.html" class="text-lg font-semibold hover:text-blue-300">Connexion</a>
+            <a href="index.html" class="text-lg font-semibold hover:text-blue-300">Rechercher</a>
+        </nav>
+    </header>
+
+    <section class="container mx-auto p-8 bg-white rounded shadow-md mt-6">
+        <h1 class="text-2xl font-bold mb-4">Formulaire de Création de Compte</h1>
+        <form action="index.html" method="post">
+            <fieldset class="mb-4">
+                <legend class="font-semibold text-lg">Civilité</legend>
+                <div class="mt-2">
+                    <input type="radio" id="monsieur" name="civilite" value="monsieur" class="mr-2">
+                    <label for="monsieur">Monsieur</label>
+                </div>
+                <div>
+                    <input type="radio" id="madame" name="civilite" value="madame" class="mr-2">
+                    <label for="madame">Madame</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="mb-4">
+                <legend class="font-semibold text-lg">Informations personnelles</legend>
+                <label for="prenom" class="block mt-2">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" required class="w-full p-2 border rounded">
+
+                <label for="nom" class="block mt-2">Nom :</label>
+                <input type="text" id="nom" name="nom" required class="w-full p-2 border rounded">
+
+                <label for="adresse" class="block mt-2">Adresse :</label>
+                <input type="text" id="adresse" name="adresse" required class="w-full p-2 border rounded">
+            </fieldset>
+
+            <fieldset class="mb-4">
+                <legend class="font-semibold text-lg">Connexion</legend>
+                <label for="email" class="block mt-2">Email :</label>
+                <input type="email" id="email" name="email" required class="w-full p-2 border rounded">
+
+                <label for="password" class="block mt-2">Mot de passe :</label>
+                <input type="password" id="password" name="password" required class="w-full p-2 border rounded">
+
+                <label for="confirm_password" class="block mt-2">Confirmer le mot de passe :</label>
+                <input type="password" id="confirm_password" name="confirm_password" required class="w-full p-2 border rounded">
+            </fieldset>
+
+            <fieldset class="mb-4">
+                <legend class="font-semibold text-lg">Passions</legend>
+                <div class="mt-2">
+                    <input type="checkbox" id="informatique" name="passions" value="informatique" class="mr-2">
+                    <label for="informatique">Informatique</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="voyages" name="passions" value="voyages" class="mr-2">
+                    <label for="voyages">Voyages</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="sport" name="passions" value="sport" class="mr-2">
+                    <label for="sport">Sport</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="lecture" name="passions" value="lecture" class="mr-2">
+                    <label for="lecture">Lecture</label>
+                </div>
+            </fieldset>
+
+            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Valider</button>
+        </form>
+    </section>
+
+    <footer class="bg-blue-500 text-white p-4 mt-8">
+        <nav class="container mx-auto flex justify-between">
+            <a href="index.html" class="hover:text-blue-300">Credits</a>
+            <a href="index.html" class="hover:text-blue-300">Team</a>
+            <a href="index.html" class="hover:text-blue-300">About US</a>
+            <a href="index.html" class="hover:text-blue-300">Support</a>
+        </nav>
+    </footer>
+</body>
+</html>

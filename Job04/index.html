@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Création de Compte</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-blue-500 text-white p-4 shadow-lg">
+        <nav class="container mx-auto flex justify-between">
+            <a href="index.html" class="text-lg font-semibold hover:text-blue-300">Accueil</a>
+            <a href="index.html" class="text-lg font-semibold hover:text-blue-300">Inscription</a>
+            <a href="index.html" class="text-lg font-semibold hover:text-blue-300">Connexion</a>
+            <a href="index.html" class="text-lg font-semibold hover:text-blue-300">Rechercher</a>
+        </nav>
+    </header>
+
+    <section class="container mx-auto p-8 bg-white rounded shadow-md mt-6">
+        <h1 class="text-2xl font-bold mb-6 text-center text-blue-600">Formulaire de Création de Compte</h1>
+        <form action="index.html" method="post" class="space-y-6">
+            <!-- Civilité -->
+            <fieldset class="mb-4">
+                <legend class="font-semibold text-lg">Civilité</legend>
+                <div class="flex items-center space-x-4 mt-2">
+                    <label class="flex items-center space-x-2">
+                        <input type="radio" id="monsieur" name="civilite" value="monsieur" class="accent-blue-500">
+                        <span>Monsieur</span>
+                    </label>
+                    <label class="flex items-center space-x-2">
+                        <input type="radio" id="madame" name="civilite" value="madame" class="accent-blue-500">
+                        <span>Madame</span>
+                    </label>
+                </div>
+            </fieldset>
+
+            <!-- Informations personnelles -->
+            <fieldset>
+                <legend class="font-semibold text-lg mb-2">Informations personnelles</legend>
+                <div class="space-y-4">
+                    <div class="relative">
+                        <i class="fas fa-user absolute left-3 top-3 text-gray-400"></i>
+                        <input type="text" id="prenom" name="prenom" placeholder="Prénom" required 
+                               class="w-full pl-10 p-3 border border-gray-300 rounded-lg shadow focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div class="relative">
+                        <i class="fas fa-user-tag absolute left-3 top-3 text-gray-400"></i>
+                        <input type="text" id="nom" name="nom" placeholder="Nom" required 
+                               class="w-full pl-10 p-3 border border-gray-300 rounded-lg shadow focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div class="relative">
+                        <i class="fas fa-map-marker-alt absolute left-3 top-3 text-gray-400"></i>
+                        <input type="text" id="adresse" name="adresse" placeholder="Adresse" required 
+                               class="w-full pl-10 p-3 border border-gray-300 rounded-lg shadow focus:ring-2 focus:ring-blue-500">
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Connexion -->
+            <fieldset>
+                <legend class="font-semibold text-lg mb-2">Connexion</legend>
+                <div class="space-y-4">
+                    <div class="relative">
+                        <i class="fas fa-envelope absolute left-3 top-3 text-gray-400"></i>
+                        <input type="email" id="email" name="email" placeholder="Email" required 
+                               class="w-full pl-10 p-3 border border-gray-300 rounded-lg shadow focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div class="relative">
+                        <i class="fas fa-lock absolute left-3 top-3 text-gray-400"></i>
+                        <input type="password" id="password" name="password" placeholder="Mot de passe" required 
+                               class="w-full pl-10 p-3 border border-gray-300 rounded-lg shadow focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div class="relative">
+                        <i class="fas fa-lock absolute left-3 top-3 text-gray-400"></i>
+                        <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirmer le mot de passe" required 
+                               class="w-full pl-10 p-3 border border-gray-300 rounded-lg shadow focus:ring-2 focus:ring-blue-500">
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Passions -->
+            <fieldset>
+                <legend class="font-semibold text-lg mb-2">Passions</legend>
+                <div class="grid grid-cols-2 gap-4">
+                    <label class="flex items-center space-x-2">
+                        <input type="checkbox" id="informatique" name="passions" value="informatique" class="accent-blue-500">
+                        <span>Informatique</span>
+                    </label>
+                    <label class="flex items-center space-x-2">
+                        <input type="checkbox" id="voyages" name="passions" value="voyages" class="accent-blue-500">
+                        <span>Voyages</span>
+                    </label>
+                    <label class="flex items-center space-x-2">
+                        <input type="checkbox" id="sport" name="passions" value="sport" class="accent-blue-500">
+                        <span>Sport</span>
+                    </label>
+                    <label class="flex items-center space-x-2">
+                        <input type="checkbox" id="lecture" name="passions" value="lecture" class="accent-blue-500">
+                        <span>Lecture</span>
+                    </label>
+                </div>
+            </fieldset>
+
+            <button type="submit" 
+                    class="w-full bg-blue-500 text-white p-3 rounded-lg shadow-lg hover:bg-blue-600 transition duration-300">
+                <i class="fas fa-paper-plane mr-2"></i>Valider
+            </button>
+        </form>
+    </section>
+
+    
+    <footer class="bg-blue-500 text-white p-4 mt-8">
+        <nav class="container mx-auto flex justify-between">
+            <a href="index.html" class="hover:text-blue-300">Credits</a>
+            <a href="index.html" class="hover:text-blue-300">Team</a>
+            <a href="index.html" class="hover:text-blue-300">About US</a>
+            <a href="index.html" class="hover:text-blue-300">Support</a>
+        </nav>
+    </footer>
+</body>
+</html>
